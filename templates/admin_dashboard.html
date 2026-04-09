@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<title>Painel Admin</title>
+
+<style>
+
+body{
+font-family: Arial;
+background:#f4f4f4;
+margin:0;
+padding:0;
+}
+
+.topo{
+background:#0b3d91;
+color:white;
+padding:20px;
+}
+
+.menu{
+background:#ffffff;
+padding:15px;
+border-bottom:1px solid #ddd;
+}
+
+.menu a{
+margin-right:20px;
+text-decoration:none;
+font-weight:bold;
+color:#0b3d91;
+}
+
+.container{
+padding:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+margin-bottom:20px;
+border-radius:6px;
+box-shadow:0 0 5px rgba(0,0,0,0.1);
+}
+
+.botao{
+margin-right:10px;
+text-decoration:none;
+color:white;
+padding:6px 10px;
+border-radius:4px;
+}
+
+.editar{
+background:#2ecc71;
+}
+
+.excluir{
+background:#e74c3c;
+}
+
+.nova{
+background:#3498db;
+padding:10px 15px;
+color:white;
+text-decoration:none;
+border-radius:4px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="topo">
+
+<h1>Painel Administrativo</h1>
+
+</div>
+
+<div class="menu">
+
+<a href="/admin">Notícias</a>
+<a href="/admin/denuncias">Denúncias</a>
+<a href="/admin/emails">Newsletter</a>
+<a href="/admin/onibus">Horários de ônibus</a>
+<a href="/admin/parceiros">Parceiros</a>
+
+</div>
+
+<div class="container">
+
+<a class="nova" href="/admin/nova">➕ Nova notícia</a>
+
+{% for noticia in noticias %}
+
+<div class="card">
+
+<h3>{{ noticia.titulo }}</h3>
+
+<a class="botao editar" href="/admin/editar/{{ noticia.id }}">Editar</a>
+
+<a class="botao excluir" href="/admin/excluir/{{ noticia.id }}">Excluir</a>
+
+</div>
+
+{% endfor %}
+
+</div>
+
+</body>
+
+</html>

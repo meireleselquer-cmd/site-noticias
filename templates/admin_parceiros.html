@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Parceiros</title>
+
+<style>
+body{
+    font-family: Arial;
+    background:#f4f4f4;
+    padding:20px;
+}
+
+.card{
+    background:white;
+    padding:15px;
+    margin-bottom:15px;
+    border-radius:6px;
+    box-shadow:0 0 5px rgba(0,0,0,0.1);
+}
+
+.botao{
+    text-decoration:none;
+    padding:6px 10px;
+    border-radius:4px;
+    color:white;
+}
+
+.excluir{
+    background:red;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>Parceiros</h2>
+
+<a href="/admin">⬅ Voltar</a>
+
+<hr>
+
+<h2>Adicionar Parceiro</h2>
+
+<form action="/add-parceiro" method="POST" enctype="multipart/form-data">
+
+    <input type="file" name="imagem" required>
+    <input type="text" name="link" placeholder="Link do WhatsApp ou site" required>
+
+    <button type="submit">Adicionar</button>
+
+</form>
+
+<hr>
+
+{% for p in parceiros %}
+
+<div class="card">
+
+    <img src="{{ url_for('static', filename='uploads/' + p.imagem) }}" width="200">
+
+    <p>{{ p.nome }}</p>
+
+    <a class="botao excluir"
+       href="/admin/parceiro/excluir/{{ p.id }}"
+       onclick="return confirm('Tem certeza que deseja excluir?')">
+       Excluir
+    </a>
+
+</div>
+
+{% endfor %}
+
+</body>
+</html>

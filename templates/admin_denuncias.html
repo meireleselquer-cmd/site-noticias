@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Denúncias</title>
+</head>
+
+<body>
+
+<h1>Denúncias recebidas</h1>
+
+<a href="/admin">Voltar ao painel</a>
+
+<hr>
+
+{% for d in denuncias %}
+
+<div>
+
+<p><b>Nome:</b> {{ d.nome }}</p>
+
+<p><b>Mensagem:</b> {{ d.mensagem }}</p>
+
+<a href="/admin/excluir_denuncia/{{ d.id }}">Excluir</a>
+
+</div>
+
+<hr>
+
+{% endfor %}
+
+</body>
+</html>

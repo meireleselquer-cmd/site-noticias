@@ -1,0 +1,23 @@
+<h2>Resultados para: {{ termo }}</h2>
+
+<div class="grid-noticias">
+
+{% for noticia in noticias %}
+
+<div class="card">
+
+{% if noticia.imagem %}
+<img src="{{ url_for('static', filename='uploads/' + noticia.imagem) }}">
+{% endif %}
+
+<h3>{{ noticia.titulo }}</h3>
+
+<p>{{ noticia.resumo }}</p>
+
+<a href="/noticia/{{ noticia.id }}">Ler matéria</a>
+
+</div>
+
+{% endfor %}
+
+</div>

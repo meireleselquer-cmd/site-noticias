@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Denúncia</title>
+</head>
+
+<body>
+
+<h1>Detalhes da denúncia</h1>
+
+<a href="/admin/denuncias">Voltar</a>
+
+<hr>
+
+<p><b>Nome:</b> {{ denuncia.nome }}</p>
+
+<p><b>Mensagem:</b></p>
+
+<p>{{ denuncia.mensagem }}</p>
+
+<br>
+
+<a href="/admin/excluir_denuncia/{{ denuncia.id }}">
+Excluir denúncia
+</a>
+
+</body>
+
+</html>

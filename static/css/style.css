@@ -1,0 +1,1956 @@
+body{
+margin:0;
+font-family:Arial;
+background:#F5F5F5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.header{
+
+background:#1A0033;
+color:white;
+padding:15px;
+
+}
+
+.container-header{
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+width:1200px;
+margin:auto;
+
+}
+
+.logo img{
+
+height:60px;
+
+}
+
+.menu a{
+
+color:white;
+text-decoration:none;
+margin:15px;
+font-weight:bold;
+
+}
+
+.menu a:hover{
+
+color:#D62828;
+
+}
+
+.urgente{
+background:#D62828;
+color:white;
+padding:10px;
+text-align:center;
+font-weight:bold;
+width:100%;
+}
+
+.noticias{
+
+width:1200px;
+margin:auto;
+padding:40px;
+
+}
+
+.grid-noticias{
+
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+gap:20px;
+
+}
+
+.card{
+
+background:white;
+padding:20px;
+border-radius:5px;
+
+}
+
+.card h3{
+
+margin-top:0;
+
+}
+
+.card a{
+
+color:#D62828;
+font-weight:bold;
+text-decoration:none;
+
+}
+
+.clima{
+
+color:white;
+font-weight:bold;
+margin-left:20px;
+
+}
+
+/* BARRA AZUL */
+
+.topo-azul{
+    background:#1A0033;
+    padding:15px 0;
+    width:100%;
+}
+
+.container-topo{
+max-width:1200px;
+width:100%;
+margin:auto;
+padding:0 15px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.logo img{
+
+height:60px;
+
+}
+
+
+/* BUSCA */
+
+.busca input{
+
+padding:8px;
+border-radius:4px;
+border:none;
+width:200px;
+
+}
+
+
+/* CLIMA */
+
+.clima{
+
+color:white;
+font-weight:bold;
+
+}
+
+
+/* MENU BRANCO */
+
+.menu-branco{
+
+background:white;
+border-bottom:1px solid #ddd;
+
+}
+
+.container-menu{
+max-width:1200px;
+width:100%;
+margin:auto;
+display:flex;
+gap:25px;
+padding:12px 15px;
+}
+
+.container-menu a{
+
+text-decoration:none;
+color:#1A0033;
+font-weight:bold;
+
+}
+
+.container-menu a:hover{
+
+color:#D62828;
+
+}
+
+/* BANNER PRINCIPAL */
+
+.banner-principal{
+
+width:1200px;
+margin:30px auto;
+
+}
+
+.banner-container{
+
+position:relative;
+
+}
+
+.banner-img{
+
+width:100%;
+height:400px;
+object-fit:cover;
+
+}
+
+.banner-texto {
+    position:absolute;
+    top:50%;
+    left:50px;
+    right:50px; /* 👈 NOVO (faz ocupar mais espaço) */
+    transform:translateY(-50%);
+    color:white;
+    max-width:900px; /* 👈 aumentamos */
+    z-index: 2;
+}
+
+.banner-texto h1{
+    font-size: 34px; /* 👈 menor */
+    line-height: 1.2; /* 👈 melhora a quebra */
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+}
+
+.banner-texto p{
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.8);
+}
+
+.botao-banner{
+    background:#D62828;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:bold;
+    display:inline-block;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.4);
+}
+
+/* LAYOUT DO SITE */
+
+.conteudo-site{
+
+width:1200px;
+margin:auto;
+
+}
+
+.container-site{
+
+display:flex;
+gap:30px;
+
+}
+
+/* COLUNA NOTÍCIAS */
+
+.coluna-noticias{
+
+flex:3;
+
+}
+
+/* SIDEBAR */
+
+.sidebar{
+
+flex:1;
+
+}
+
+.sidebar{
+
+background:white;
+padding:20px;
+margin-top:30px;
+
+}
+
+.sidebar ul{
+
+list-style:none;
+padding:0;
+
+}
+
+.sidebar li{
+
+margin-bottom:10px;
+
+}
+
+.sidebar a{
+
+text-decoration:none;
+color:#1A0033;
+font-weight:bold;
+
+}
+
+/* BOX SIDEBAR */
+
+.box-sidebar{
+
+background:white;
+padding:20px;
+margin-bottom:20px;
+border-radius:5px;
+
+}
+
+.box-sidebar h3{
+
+margin-top:0;
+color:#1A0033;
+
+}
+
+/* PUBLICIDADE */
+
+.anuncio{
+
+background:#eee;
+height:120px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:bold;
+
+}
+
+/* DENÚNCIA */
+
+.denuncia input,
+.denuncia textarea{
+
+width:100%;
+padding:8px;
+margin-bottom:10px;
+border:1px solid #ccc;
+
+}
+
+.denuncia button{
+
+width:100%;
+padding:10px;
+background:#1A0033;
+color:white;
+border:none;
+font-weight:bold;
+cursor:pointer;
+
+}
+
+/* MAIS LIDAS */
+
+.mais-lidas{
+
+list-style:none;
+padding:0;
+
+}
+
+.mais-lidas li{
+
+padding:8px 0;
+border-bottom:1px solid #eee;
+
+}
+
+/* SEÇÕES REGIÕES */
+
+.secoes-regiao{
+
+width:1200px;
+margin:40px auto;
+
+}
+
+.container-regiao{
+
+display:flex;
+gap:30px;
+
+}
+
+.regiao-box{
+
+background:white;
+flex:1;
+padding:15px;
+border-radius:5px;
+
+}
+
+.regiao-box img{
+
+width:100%;
+height:200px;
+object-fit:cover;
+margin-bottom:10px;
+
+}
+
+.titulo-regiao{
+
+color:white;
+padding:8px;
+font-weight:bold;
+margin-bottom:10px;
+
+}
+
+.azul{
+
+background:#1A0033;
+
+}
+
+.verde{
+
+background:#2E7D32;
+
+}
+
+/* NEWSLETTER */
+
+.newsletter{
+
+background:#f2f2f2;
+padding:40px 0;
+margin-top:40px;
+
+}
+
+.container-newsletter{
+
+width:1200px;
+margin:auto;
+text-align:center;
+
+}
+
+.container-newsletter h2{
+
+color:#1A0033;
+margin-bottom:10px;
+
+}
+
+.form-newsletter{
+
+margin-top:20px;
+
+}
+
+.form-newsletter input{
+
+padding:10px;
+width:300px;
+border:1px solid #ccc;
+
+}
+
+.form-newsletter button{
+
+padding:10px 20px;
+background:#1A0033;
+color:white;
+border:none;
+font-weight:bold;
+cursor:pointer;
+
+}
+
+/* FOOTER */
+
+.footer{
+    background:#1A0033;
+    color:white;
+    margin-top:40px;
+    width:100%;
+}
+
+.container-footer{
+max-width:1200px;
+width:100%;
+margin:auto;
+display:flex;
+gap:40px;
+padding:40px 15px;
+}
+
+.footer-col{
+
+flex:1;
+
+}
+
+.footer-col h3{
+
+margin-bottom:15px;
+
+}
+
+.footer-col ul{
+
+list-style:none;
+padding:0;
+
+}
+
+.footer-col ul li{
+
+margin-bottom:8px;
+
+}
+
+.footer-col a{
+
+color:white;
+text-decoration:none;
+
+}
+
+.footer-bottom{
+    text-align:center;
+    padding:15px;
+    background:#1A0033; /* mesma cor do footer */
+}
+
+.card img{
+
+width:100%;
+height:180px;
+object-fit:cover;
+margin-bottom:10px;
+
+}
+
+/* PÁGINA DA NOTÍCIA */
+
+.pagina-noticia{
+
+width:800px;
+margin:40px auto;
+background:white;
+padding:30px;
+
+}
+
+.pagina-noticia img{
+
+width:100%;
+margin:20px 0;
+
+}
+
+.categoria{
+
+color:#1A0033;
+font-weight:bold;
+
+}
+
+.conteudo{
+
+line-height:1.6;
+
+}
+
+/* CONTEUDO PRINCIPAL */
+
+.container-site{
+width:1200px;
+margin:auto;
+display:flex;
+gap:30px;
+align-items:flex-start;
+}
+
+
+/* COLUNA NOTICIAS */
+
+.coluna-noticias{
+width:70%;
+}
+
+
+/* GRID DE NOTICIAS */
+
+.grid-noticias{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+
+
+/* CARD NOTICIA */
+
+.card{
+    background:white;
+    border-radius:10px; /* mais bonito */
+    overflow:hidden; /* 🔥 ESSENCIAL (remove borda branca) */
+    padding:0; /* 🔥 remove o espaço interno */
+    height: auto !important;
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    display:block; /* 🔥 remove espaço branco invisível */
+    margin:0;      /* 🔥 remove borda */
+}
+
+.card h3{
+    margin:10px 0;
+    padding: 10px 15px;
+
+    font-size:16px;
+    line-height:1.4;
+    word-break: break-word; /* 🔥 resolve corte */
+}
+
+.card p{
+    padding: 0 15px 10px 15px;
+    font-size:14px;
+    line-height:1.5;
+}
+
+.card a{
+    color:#D62828;
+    font-weight:bold;
+    text-decoration:none;
+
+    display:block; /* 🔥 faz ocupar linha inteira */
+    padding: 10px 15px 15px 15px; /* 🔥 espaço embaixo */
+}
+/* SIDEBAR */
+
+.sidebar{
+width:30%;
+}
+
+
+/* BOX SIDEBAR */
+
+.box{
+background:white;
+padding:20px;
+margin-bottom:20px;
+border-radius:6px;
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.box h3{
+margin-top:0;
+color:#1A0033;
+}
+
+
+/* PUBLICIDADE */
+
+.banner-publicidade{
+background:#eee;
+height:150px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:bold;
+font-size:20px;
+}
+
+
+/* DENUNCIA */
+
+.denuncia input,
+.denuncia textarea{
+width:100%;
+padding:10px;
+margin-bottom:10px;
+border:1px solid #ccc;
+border-radius:4px;
+}
+
+.denuncia button{
+background:#0a7c3a;
+color:white;
+border:none;
+padding:10px;
+width:100%;
+cursor:pointer;
+border-radius:4px;
+font-weight:bold;
+}
+
+
+/* MAIS LIDAS */
+
+.mais-lidas ul{
+list-style:none;
+padding:0;
+margin:0;
+}
+
+.mais-lidas li{
+margin-bottom:10px;
+padding-bottom:10px;
+border-bottom:1px solid #eee;
+}
+
+.mais-lidas a{
+text-decoration:none;
+color:#1A0033;
+font-weight:bold;
+}
+
+.banner-publicidade {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card-publicidade {
+    border: 1px solid #ddd;
+    padding: 8px;
+    border-radius: 8px;
+    background: #fff;
+    text-align: center;
+}
+
+.card-publicidade img {
+    width: 100%;
+    height: 160px; /* 🔥 altura maior */
+    object-fit: cover;
+    display: block;
+}
+
+.publicidade {
+    display: flex;
+    gap: 20px;
+    padding: 15px;
+    overflow-x: auto;
+}
+
+.card-publicidade {
+    min-width: 280px; /* 🔥 aumenta tamanho */
+    max-width: 300px;
+
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+
+    padding: 0; /* 🔥 remove borda interna */
+    text-align: center;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+/* ============================= */
+/* RESPONSIVIDADE CELULAR */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+    /* MENU */
+    .container-menu {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .container-menu a {
+        font-size: 14px;
+    }
+
+    /* TOPO */
+    .container-topo {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* BANNER PRINCIPAL */
+    .banner-container {
+        flex-direction: column;
+    }
+
+    .banner-img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* CONTEÚDO */
+    .container-site {
+        flex-direction: column;
+    }
+
+    /* NOTÍCIAS */
+    .grid-noticias {
+        grid-template-columns: 1fr;
+    }
+
+    /* SIDEBAR */
+    .sidebar {
+        width: 100%;
+    }
+
+    /* PUBLICIDADE */
+    .banner-publicidade {
+        flex-direction: row;
+        overflow-x: auto;
+    }
+
+    .card-publicidade {
+        min-width: 200px;
+    }
+
+    /* REGIÕES */
+    .container-regiao {
+        flex-direction: column;
+    }
+
+    /* FOOTER */
+    .container-footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .footer {
+        width: 100%;
+    }
+
+    .container-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* CENTRALIZAR CONTEÚDO NO CELULAR */
+
+.coluna-noticias,
+.sidebar {
+    width: 100%;
+    text-align: center;
+}
+
+.card {
+    margin: 0 auto;
+}
+
+.banner-publicidade {
+    justify-content: center;
+}
+
+/* CENTRALIZAR BOXES DA SIDEBAR NO CELULAR */
+
+.box,
+.box-sidebar {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mais-lidas ul {
+    padding: 0;
+}
+
+.mais-lidas li {
+    text-align: center;
+}
+
+}
+
+.topo-azul,
+.menu-branco,
+.urgente,
+.footer {
+    width: 100%;
+    display: block;
+}
+
+/* CORRIGIR FAIXAS AZUIS NO CELULAR */
+@media (max-width: 768px) {
+
+    .container-topo,
+    .container-menu,
+    .container-footer,
+    .container-site,
+    .container-regiao,
+    .container-newsletter {
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .topo-azul,
+    .menu-branco,
+    .footer {
+        width: 100%;
+    }
+
+}
+
+/* CORREÇÃO TOTAL MOBILE - FAIXAS AZUIS */
+
+@media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    * {
+        max-width: 100%;
+    }
+
+    .topo-azul,
+    .menu-branco,
+    .footer,
+    .urgente {
+        width: 100%;
+    }
+
+    .container-topo,
+    .container-menu,
+    .container-site,
+    .container-footer,
+    .container-regiao,
+    .container-newsletter {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.card img{
+    width:100%;
+    height:auto !important;
+    max-height:220px;
+    object-fit:cover;
+}
+
+@media (max-width: 768px) {
+
+    .banner-img {
+        height: 200px;
+    }
+
+    .banner-texto {
+        left: 15px;
+        right: 15px;
+        max-width: 100%;
+    }
+
+    .banner-texto h1 {
+        font-size: 18px; /* menor */
+        line-height: 1.3;
+        margin-bottom: 8px;
+    }
+
+    .banner-texto p {
+        font-size: 13px;
+        line-height: 1.4;
+        margin-bottom: 10px;
+    }
+
+    .botao-banner {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+}
+
+.banner-container {
+    position: relative;
+}
+
+.banner-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* escurece a imagem */
+    z-index: 1;
+}
+/* REDES SOCIAIS - EFEITO PREMIUM */
+
+.redes-sociais {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.redes-sociais a {
+    width: 42px;
+    height: 42px;
+    font-size: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.08); /* vidro */
+    backdrop-filter: blur(8px); /* efeito glass */
+    -webkit-backdrop-filter: blur(8px);
+
+    color: white;
+    font-size: 20px;
+
+    border: 1px solid rgba(255,255,255,0.2);
+
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+/* ÍCONE */
+.redes-sociais a i {
+    color: inherit;
+}
+
+/* HOVER PREMIUM */
+.redes-sociais a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px) scale(1.1);
+
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+
+    .galeria-onibus {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* GALERIA DE ÔNIBUS FINAL */
+
+/* ===== PC (DESKTOP) ===== */
+
+.galeria-onibus {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+.item-onibus {
+    width: 100%;
+    height: auto; 
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.item-onibus img {
+    width: 100%;
+    height: auto; 
+    object-fit: contain;
+}
+/* ===== CELULAR ===== */
+
+@media (max-width: 768px) {
+
+    .galeria-onibus {
+        grid-template-columns: 1fr; /* 1 por linha */
+    }
+
+    .item-onibus {
+        height: auto;
+    }
+
+    .item-onibus img {
+        height: auto;
+        object-fit: cover;
+    }
+
+}
+
+/* efeito leve ao passar o mouse 
+.item-onibus img:hover {
+    transform: scale(1.05);
+}
+
+.btn-excluir {
+    margin-top: 5px;
+    background: red;
+    color: white;
+    border: none;
+    padding: 6px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-excluir:hover {
+    background: darkred;
+}
+
+/* ============================= */
+/* CORREÇÃO FINAL MOBILE (SEM QUEBRAR NADA) */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+    /* NÃO MEXE NA FAIXA VERMELHA */
+    .urgente {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* GARANTE QUE NADA VAI CORTAR */
+    body {
+        overflow-x: hidden;
+    }
+
+    /* CONTAINER PRINCIPAL */
+    .container-site {
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100% !important;
+    }
+
+    /* COLUNA NOTÍCIAS */
+    .coluna-noticias {
+        width: 100% !important;
+    }
+
+    /* SIDEBAR (PUBLICIDADE + DENÚNCIA + MAIS LIDAS) */
+    .sidebar {
+        width: 100% !important;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    /* BOXES (DENÚNCIA, MAIS LIDAS, ETC) */
+    .box,
+    .box-sidebar {
+        width: 100% !important;
+        max-width: 400px;
+        margin: 15px auto !important;
+        text-align: center;
+    }
+
+    /* LISTA MAIS LIDAS */
+    .mais-lidas li {
+        text-align: center;
+    }
+
+    /* PUBLICIDADE */
+    .banner-publicidade {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+}
+
+/* ============================= */
+/* CORREÇÃO FINAL DOS BOXES MOBILE */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+    /* GARANTE QUE NADA PASSE DA TELA */
+    * {
+        box-sizing: border-box;
+    }
+
+    /* SIDEBAR */
+    .sidebar {
+        width: 100% !important;
+        padding: 0 10px;
+    }
+
+    /* TODOS OS BOXES (PUBLICIDADE, DENUNCIA, MAIS LIDAS) */
+    .box,
+    .box-sidebar {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 15px;
+        margin: 10px 0;
+    }
+
+    /* INPUTS (DENUNCIA) */
+    .denuncia input,
+    .denuncia textarea {
+        width: 100%;
+    }
+
+    /* BOTÃO */
+    .denuncia button {
+        width: 100%;
+    }
+
+    /* MAIS LIDAS TEXTO */
+    .mais-lidas li {
+        width: 100%;
+        word-break: break-word;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .urgente {
+        margin-top: 10px; /* 🔥 espaço da barra azul */
+    }
+
+}
+
+/* ============================= */
+/* WHATSAPP FOOTER (DESKTOP) */
+/* ============================= */
+
+.whatsapp-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+    align-items: center;
+}
+
+.btn-whatsapp {
+    background: #25D366;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+    transition: 0.3s;
+    max-width: 220px;
+}
+
+.btn-whatsapp:hover {
+    background: #1ebe5d;
+}
+
+.btn-whatsapp.grupo {
+    background: #128C7E;
+}
+
+.btn-whatsapp.grupo:hover {
+    background: #0f7a6c;
+}
+
+/* ============================= */
+/* ORGANIZAÇÃO FOOTER DESKTOP */
+/* ============================= */
+
+@media (min-width: 769px) {
+
+    .container-footer {
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .footer-col {
+        flex: 1;
+        min-width: 200px;
+    }
+
+}
+
+/* ============================= */
+/* FOOTER ESTILO PORTAL (SÓ DESKTOP) */
+/* ============================= */
+
+@media (min-width: 769px) {
+
+    .container-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 40px;
+        flex-wrap: nowrap;
+    }
+
+    .footer-col {
+        flex: 1;
+        min-width: 200px;
+    }
+
+    /* ORGANIZA LINKS */
+    .footer-col ul {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    /* WHATSAPP */
+    .whatsapp-links {
+        align-items: flex-start;
+    }
+
+    /* REDES MAIS BONITAS */
+    .redes-sociais {
+        justify-content: flex-start;
+    }
+
+    /* DIREITOS SEPARADO */
+    .footer-bottom {
+    text-align: center; /* centraliza */
+    padding: 10px 0;    /* diminui espaço */
+    margin-top: 10px;   /* sobe ele */
+}
+}
+
+/* ============================= */
+/* RESET FOOTER MOBILE (CORREÇÃO FINAL) */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+    .container-footer {
+        display: flex !important;
+        flex-direction: column !important;
+        text-align: center !important;
+        gap: 20px !important;
+    }
+
+    .footer-col {
+        width: 100% !important;
+    }
+
+    .footer-col ul {
+        padding: 0;
+    }
+
+    .whatsapp-links {
+        align-items: center !important;
+    }
+
+    .redes-sociais {
+        justify-content: center !important;
+    }
+
+    .footer-bottom {
+        text-align: center !important;
+        padding: 15px;
+    }
+
+}
+
+/* ============================= */
+/* CONTROLE FOOTER FINAL CORRETO */
+/* ============================= */
+
+/* DESKTOP */
+@media (min-width: 769px) {
+    .footer-desktop {
+        display: block;
+    }
+
+    .footer-mobile {
+        display: none;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .footer-desktop {
+        display: none;
+    }
+
+    .footer-mobile {
+        display: block;
+        background: #1A0033;
+        color: white;
+        padding: 20px 0;
+    }
+}
+
+.whatsapp-icon i {
+    color: #25D366;
+}
+
+.banner-rotativo {
+    width: 1200px;
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+}
+
+.slide.ativo {
+    display: block;
+}
+
+.slide img {
+    width: 100%;
+    height: auto; /* 🔥 NÃO CORTA */
+    object-fit: contain; /* 🔥 MOSTRA COMPLETO */
+    border-radius: 8px;
+}
+
+/* MINI NOTÍCIAS (ESTILO PORTAL) */
+
+.grid-mini-noticias {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.mini-card {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.mini-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.mini-card img {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.mini-card a {
+    font-size: 13px;
+    font-weight: bold;
+    color: #1A0033;
+    text-decoration: none;
+    line-height: 1.3;
+}
+
+.mini-card a:hover {
+    color: #D62828;
+}
+
+@media (max-width: 768px) {
+
+    .grid-mini-noticias {
+        grid-template-columns: 1fr;
+    }
+
+    .mini-card {
+        align-items: flex-start;
+    }
+
+}
+
+.bloco-mundo {
+    width: 1200px;
+    margin: 40px auto;
+}
+
+/* 🔥 AQUI É O QUE VOCÊ QUER */
+.titulo-mundo {
+    display: block;
+    font-size: 28px;
+    font-weight: bold;
+    color: #1A0033;
+    margin-bottom: 15px; /* espaço entre título e notícias */
+}
+
+/* garante que notícias fiquem embaixo */
+.grid-mundo {
+    display: grid;
+}
+
+.vagas {
+    overflow: hidden;
+}
+
+/* CARROSSEL */
+.carrossel-vagas {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+/* ITEM */
+.item-vaga {
+    min-width: 200px; /* 🔥 controla tamanho */
+    max-width: 220px;
+
+    background: #fff;
+    border-radius: 8px;
+    padding: 8px;
+
+    text-decoration: none;
+    color: black;
+    flex-shrink: 0;
+}
+
+/* IMAGEM */
+.item-vaga img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* TEXTO */
+.item-vaga span {
+    font-size: 13px;
+    font-weight: bold;
+    display: block;
+    margin-top: 5px;
+}
+
+/* BLOCO DE VAGAS (FORA DA SIDEBAR) */
+
+.bloco-vagas {
+    width: 100%;
+    margin: 30px 0;
+}
+
+.container-vagas {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.grid-vagas-home {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .grid-vagas-home {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* NOVO LAYOUT 3 COLUNAS */
+
+.container-site {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+/* NOTÍCIAS */
+.coluna-noticias {
+    width: 60%;
+}
+
+/* VAGAS (NOVA) */
+.coluna-vagas {
+    width: 20%;
+}
+
+.coluna-vagas h3 {
+    margin-bottom: 15px;
+    color: #1A0033;
+}
+
+/* CARD VAGA */
+.card-vaga {
+    background: white;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.card-vaga img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+.card-vaga a {
+    display: block;
+    padding: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #1A0033;
+    font-weight: bold;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 20%;
+}
+
+@media (max-width: 768px) {
+
+    .container-site {
+        flex-direction: column;
+    }
+
+    .coluna-noticias,
+    .coluna-vagas,
+    .sidebar {
+        width: 100%;
+    }
+
+}
+
+/* VAGAS ACIMA DA SIDEBAR */
+
+.coluna-vagas {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.card-vaga {
+    background: white;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card-vaga img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+.card-vaga a {
+    display: block;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #1A0033;
+    text-decoration: none;
+}
+
+.lado-direito {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-vaga {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.card-vaga img {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.card-vaga a {
+    font-size: 14px;
+    font-weight: bold;
+    color: #1A0033;
+    text-decoration: none;
+    line-height: 1.3;
+}
+
+.card-vaga a:hover {
+    color: #D62828;
+}
+
+@media (max-width: 768px) {
+
+    .container-site {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* FORÇA ORDEM CERTA */
+
+    .lado-sidebar {
+        order: 3;
+        width: 100%;
+    }
+
+    .coluna-noticias {
+        order: 1;
+        width: 100%;
+    }
+
+    .coluna-vagas {
+        order: 2;
+        width: 100%;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+
+    .container-site {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* 1️⃣ Últimas notícias */
+    .coluna-noticias {
+        order: 1;
+        width: 100%;
+    }
+
+    /* 2️⃣ Vagas de emprego */
+    .coluna-vagas {
+        order: 2;
+        width: 100%;
+    }
+
+    /* 3️⃣ e 4️⃣ Sidebar */
+    .lado-sidebar {
+        order: 3;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* 3️⃣ Envie sua denúncia */
+    .denuncia {
+        order: 1;
+    }
+
+    /* 4️⃣ Mais lidas */
+    .mais-lidas {
+        order: 2;
+    }
+
+}
+
+/* 📱 ORGANIZAÇÃO MOBILE */
+@media (max-width: 768px){
+
+    .container-site{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .coluna-noticias{
+        order: 1;
+    }
+
+    .sidebar{
+        order: 3;
+    }
+
+    /* Vagas sobe pra posição 2 */
+    .sidebar .box:nth-child(1){
+        order: 2;
+    }
+
+    .sidebar .denuncia{
+        order: 3;
+    }
+
+    .sidebar .mais-lidas{
+        order: 4;
+    }
+
+    /* Faz sidebar virar coluna normal */
+    .sidebar{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+/* 🔥 REMOVE BORDA DAS IMAGENS DE NO MUNDO */
+.grid-mini-noticias .mini-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+/* REMOVE ESPAÇO DO CARD */
+.grid-mini-noticias .mini-card {
+    padding: 0;
+    background: none;
+}
+
+/* 🔥 ARRUMA LAYOUT DO "NO MUNDO" */
+.grid-mini-noticias .mini-card {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* imagem */
+.grid-mini-noticias .mini-card img {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* texto */
+.grid-mini-noticias .mini-card a {
+    font-size: 14px;
+    line-height: 1.3;
+    color: #0a1a44;
+    text-decoration: none;
+    display: block;
+}
+
+/* evita texto esmagado */
+.grid-mini-noticias {
+    grid-template-columns: 1fr;
+}
+
+/* 🔥 NO MUNDO EM FORMATO DE CARDS HORIZONTAL */
+.grid-mini-noticias {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+/* CARD */
+.grid-mini-noticias .mini-card {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background: #f5f5f5;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* IMAGEM */
+.grid-mini-noticias .mini-card img {
+    width: 90px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* TEXTO */
+.grid-mini-noticias .mini-card a {
+    font-size: 14px;
+    color: #0a1a44;
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+@media (max-width: 768px){
+    .grid-mini-noticias {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* 🔥 AJUSTE SOMENTE NO MOBILE */
+@media (max-width: 768px){
+
+    .banner-rotativo img{
+        border-radius: 0 !important;
+    }
+
+}
+
+.titulo-categoria{
+    margin: 20px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #0b3d91;
+}
+
+/* GRID BONITO */
+.grid-categoria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* CARD */
+.card-categoria{
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card-categoria:hover{
+    transform: translateY(-5px);
+}
+
+/* IMAGEM */
+.card-categoria img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* TEXTO */
+.conteudo-card{
+    padding: 15px;
+}
+
+.conteudo-card h3{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.conteudo-card p{
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* BOTÃO */
+.btn-leia{
+    display: inline-block;
+    background: #0b3d91;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.btn-leia:hover{
+    background: #082c6c;
+}

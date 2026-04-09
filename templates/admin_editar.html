@@ -1,0 +1,15 @@
+<h2>Editar notícia</h2>
+
+<form method="POST">
+
+<input type="text" name="titulo" value="{{ noticia.titulo }}">
+
+<input type="text" name="categoria" value="{{ noticia.categoria }}">
+
+<textarea name="resumo">{{ noticia.resumo }}</textarea>
+
+<textarea name="conteudo">{{ noticia.conteudo }}</textarea>
+
+<button>Salvar alterações</button>
+
+</form>

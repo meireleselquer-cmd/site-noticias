@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>{{ noticia.titulo }}</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<div class="pagina-noticia">
+
+<h1>{{ noticia.titulo }}</h1>
+
+<p class="categoria">{{ noticia.categoria }}</p>
+
+{% if noticia.imagem %}
+<img src="{{ url_for('static', filename='uploads/' + noticia.imagem) }}">
+{% endif %}
+
+<div class="conteudo">
+
+<p>{{ noticia.conteudo }}</p>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

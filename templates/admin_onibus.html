@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Horários de ônibus</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<h1>Horários de ônibus</h1>
+
+<a href="/admin">⬅ Voltar</a>
+<a href="/admin/onibus/novo">➕ Novo horário</a>
+
+<hr>
+
+{% for h in horarios %}
+
+<div style="margin-bottom:20px; border:1px solid #ccc; padding:15px; border-radius:8px;">
+
+    <p>
+    <b>Linha:</b> {{ h.linha }} <br>
+    <b>Saída:</b> {{ h.saida }} <br>
+    <b>Destino:</b> {{ h.destino }}
+    </p>
+
+    {% if h.imagem %}
+        <img src="{{ url_for('static', filename='uploads/' + h.imagem) }}" 
+             style="width:200px; border-radius:8px; margin-bottom:10px;">
+    {% endif %}
+
+    <!-- BOTÃO EXCLUIR (CORRETO) -->
+    <form action="/deletar-horario/{{ h.id }}" method="POST">
+        <button class="btn-excluir" 
+                onclick="return confirm('Tem certeza que deseja excluir este horário?')">
+            🗑 Excluir
+        </button>
+    </form>
+
+</div>
+
+{% endfor %}
+
+</body>
+
+</html>

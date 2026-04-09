@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Novo horário de ônibus</title>
+</head>
+
+<body>
+
+<h1>Cadastrar horário de ônibus</h1>
+
+<a href="/admin/onibus">Voltar</a>
+
+<hr>
+
+<form method="POST" enctype="multipart/form-data">
+
+<label>Linha</label>
+<br>
+<input type="text" name="linha">
+
+<br><br>
+
+<label>Horário de saída</label>
+<br>
+<input type="text" name="saida">
+
+<br><br>
+
+<label>Destino</label>
+<br>
+<input type="text" name="destino">
+
+<br><br>
+
+<label>Imagem do horário</label>
+<br>
+<input type="file" name="imagem">
+
+<br><br>
+
+<!-- 🔥 NOVO CAMPO DE LINK -->
+<label>Link da publicidade (opcional)</label>
+<br>
+<input type="text" name="link" placeholder="https://site.com">
+
+<br><br>
+
+<button type="submit">Salvar</button>
+</form>
+
+</body>
+</html>

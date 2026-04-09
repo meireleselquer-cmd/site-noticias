@@ -1,0 +1,27 @@
+<h2 class="titulo-categoria">Categoria: {{ nome_categoria }}</h2>
+
+<div class="grid-categoria">
+
+{% for noticia in noticias %}
+<div class="card-categoria">
+
+    {% if noticia.imagem %}
+    <img src="{{ url_for('static', filename='uploads/' + noticia.imagem) }}">
+    {% endif %}
+
+    <div class="conteudo-card">
+
+        <h3>{{ noticia.titulo }}</h3>
+
+        <p>{{ noticia.resumo }}</p>
+
+        <a href="/noticia/{{ noticia.id }}" class="btn-leia">
+            Ler matéria
+        </a>
+
+    </div>
+
+</div>
+{% endfor %}
+
+</div>

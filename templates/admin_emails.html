@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Emails</title>
+</head>
+
+<body>
+
+<h1>Emails cadastrados</h1>
+
+<a href="/admin">Voltar ao painel</a>
+
+<hr>
+
+<ul>
+
+{% for email in emails %}
+
+<li>{{ email.email }}</li>
+
+{% endfor %}
+
+</ul>
+
+</body>
+</html>

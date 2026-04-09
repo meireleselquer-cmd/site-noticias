@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Nova notícia</title>
+</head>
+
+<body>
+
+<h1>Nova notícia</h1>
+
+<form method="POST" enctype="multipart/form-data">
+
+<input type="text" name="titulo" placeholder="Título"><br><br>
+
+<input type="text" name="resumo" placeholder="Resumo"><br><br>
+
+<textarea name="conteudo" placeholder="Conteúdo"></textarea><br><br>
+
+<input type="file" name="imagem"><br><br>
+
+<label>Categoria:</label>
+
+<select name="categoria" required>
+
+<option value="">Selecione</option>
+
+<option value="Sul Fluminense">Sul Fluminense</option>
+<option value="Região Serrana">Região Serrana</option>
+<option value="Zona da Mata">Zona da Mata</option>
+<option value="Brasil">Brasil</option>
+<option value="Mundo">Mundo</option>
+<option value="Vagas">Vagas de Emprego</option>
+
+<!-- IMPORTANTE -->
+<option value="Publicidade">Publicidade</option>
+
+</select>
+
+<br><br>
+
+<button>Publicar</button>
+
+</form>
+
+</body>
+
+</html>
