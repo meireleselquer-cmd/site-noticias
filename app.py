@@ -1,14 +1,22 @@
 import os
 import unicodedata
 from werkzeug.utils import secure_filename
+from werkzeug.security import check_password_hash # ADICIONADO
 from flask import Flask, render_template, request, redirect, session
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import or_
 from sqlalchemy import not_
+from dotenv import load_dotenv # ADICIONADO
+
+# Carrega as variáveis de segurança
+load_dotenv()
+
+os.makedirs("static/uploads", exist_ok=True)
 
 app = Flask(__name__)
 
-app.secret_key = "segredo123"
+# Pega a chave secreta do arquivo .env
+app.secret_key = os.getenv("FLASK_SECRET_KEY")
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
@@ -179,15 +187,27 @@ def newsletter():
 @app.route("/admin/login", methods=["GET","POST"])
 def admin_login():
     if request.method == "POST":
-        usuario = request.form["usuario"]
-        senha = request.form["senha"]
+        usuario_digitado = request.form["usuario"]
+        senha_digitada = request.form["senha"]
 
-        if usuario == "admin" and senha == "1234":
+        admin_user = os.getenv("ADMIN_USER")
+        admin_hash = os.getenv("ADMIN_PASSWORD_HASH")
+
+        # Verifica se o usuário e a senha batem
+        if admin_hash and usuario_digitado == admin_user and check_password_hash(admin_hash, senha_digitada):
             session["admin"] = True
             return redirect("/admin")
+        
+        # Se errar a senha, volta para o login
+        return render_template("admin_login.html", erro="Usuário ou senha incorretos.")
 
     return render_template("admin_login.html")
 
+# Adicione a rota de logout para você conseguir sair do painel depois
+@app.route("/admin/logout")
+def admin_logout():
+    session.pop("admin", None)
+    return redirect("/")
 
 @app.route("/admin")
 def admin_dashboard():
@@ -448,10 +468,5 @@ if __name__ == "__main__":
     with app.app_context():
         db.create_all()
 
-    app.run(host="0.0.0.0", port=5000, debug=True)
-
-import os
-
-if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
-    app.run(host="0.0.0.0", port=port) 
+    app.run(host="0.0.0.0", port=port, debug=True)
